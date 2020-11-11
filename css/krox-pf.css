@@ -76,7 +76,7 @@ body {
   height: 370px;
   border-radius: 100%;
   border: 10px solid #ffffff;
-  background-image: url(/images/krox.jpg);
+  background-image: url('/images/krox.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -107,5 +107,41 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 40px;
     line-height: 48px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .info {
+    max-width: 90%;
+  }
+
+  .info p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .info a {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .name {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .profession {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .img-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 8px solid #ffffff;
   }
 }

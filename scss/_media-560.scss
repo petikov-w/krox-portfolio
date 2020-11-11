@@ -1,0 +1,32 @@
+@media screen and (max-width: 560px) {
+
+  .info {
+    max-width: 90%;
+  }
+
+  .info p {
+    @include use_font($Roboto,14px);
+    line-height: 26px;
+  }
+
+  .info a {
+    @include use_font($Roboto,10px);
+    line-height: 12px;
+  }
+
+  .name {
+    @include use_font($Roboto, 30px);
+    line-height: 38px;
+  }
+
+  .profession {
+    @include use_font($Roboto,18px);
+    line-height: 22px;
+  }
+
+  .img-card {
+    @include wh_size(200px, 200px, circle);
+    border: 8px solid #ffffff;
+  }
+
+}
