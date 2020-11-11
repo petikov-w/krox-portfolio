@@ -1,13 +1,3 @@
-body {
-  box-sizing: border-box;
-  background: #000000;
-}
-
-.container {
-  max-width: 1000px;
-  height: 726px;
-  margin: auto;
-}
 
 .business-card {
   display: flex;
@@ -24,8 +14,7 @@ body {
 }
 
 .profession {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  @include use_font($Roboto,24px);
   line-height: 28px;
   font-weight: 400;
   color: #FFBB01;
@@ -33,8 +22,7 @@ body {
 }
 
 .name {
-  font-family: "Roboto", sans-serif;
-  font-size: 50px;
+  @include use_font($Roboto,50px);
   line-height: 58px;
   font-weight: 700;
   color: #ffffff;
@@ -42,8 +30,7 @@ body {
 }
 
 .info p {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  @include use_font($Roboto,16px);
   line-height: 28px;
   font-weight: 400;
   color: #ffffff;
@@ -55,8 +42,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.5px;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  @include use_font($Roboto,12px);
   line-height: 14px;
   font-weight: 700;
   color: #2E2E30;
@@ -72,40 +58,13 @@ body {
 }
 
 .img-card {
-  width: 370px;
-  height: 370px;
-  border-radius: 100%;
+  @include wh_size(370px, 370px, circle);
   border: 10px solid #ffffff;
   background-image: url(/images/krox.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   display: flex;
-}
 
-@media screen and (max-width: 1024px) {
-  .business-card {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .img-card {
-    order: -1;
-    margin-bottom: 60px;
-  }
-
-  .info {
-    align-items: center;
-    max-width: 70%;
-  }
-
-  .info p {
-    text-align: center;
-  }
-
-  .name {
-    font-family: "Roboto", sans-serif;
-    font-size: 40px;
-    line-height: 48px;
-  }
+  //margin: 23px 20px 0 20px;
 }

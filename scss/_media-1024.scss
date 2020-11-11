@@ -1,0 +1,26 @@
+@media screen and (max-width: 1024px) {
+
+  .business-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-card {
+    order: -1;
+    margin-bottom: 60px;
+  }
+
+  .info {
+    align-items: center;
+    max-width: 70%;
+  }
+
+  .info p {
+    text-align: center;
+  }
+
+  .name {
+    @include use_font($Roboto, 40px);
+    line-height: 48px;
+  }
+
+}
